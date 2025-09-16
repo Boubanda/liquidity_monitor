@@ -1,0 +1,10 @@
+pandas==2.1.0
+requests==2.31.0
+yfinance==0.2.18
+streamlit==1.26.0
+plotly==5.17.0
+schedule==1.2.0
+python-dotenv==1.0.0
+numpy==1.24.0
+scipy==1.11.0
+PyYAML==6.0.1
