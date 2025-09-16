@@ -1,0 +1,23 @@
+data_sources:
+  ecb_api: "https://sdw-wsrest.ecb.europa.eu/service/data"
+  yahoo_finance: true
+  alpha_vantage_api: "https://www.alphavantage.co/query"
+  
+quality_thresholds:
+  completeness_min: 0.95
+  freshness_hours: 24
+  outlier_std_threshold: 3
+  max_missing_consecutive: 5
+  
+storage:
+  raw_data_path: "./data/raw"
+  processed_data_path: "./data/processed"
+  quality_reports_path: "./data/quality_reports"
+  
+dashboard:
+  title: "🏦 Liquidity Data Quality Monitor"
+  refresh_interval: 300  # 5 minutes
+  
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
